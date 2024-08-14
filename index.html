@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Independence Day</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="you.css" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #000000;
+    }
+    .clr-orange, .clr-white, .clr-green {
+      height: 34.33vh;
+      width: 0;
+      position: absolute;
+      animation: grow 2s forwards;
+    }
+    .clr-orange {
+      background: linear-gradient(to bottom, #ff8011, #ffae4a);
+      top: 0;
+      left: 0;
+    }
+    .clr-white {
+      background: #ffffff;
+      top: 33.33vh;
+      right: 0;
+    }
+    .clr-green {
+      background: linear-gradient(to bottom, #75fc3b, #46ad1b);
+      bottom: 0;
+      left: 0;
+    }
+    @keyframes grow {
+      100% {
+        width: 100vw;
+      }
+    }
+    .ashoka-chakra {
+      position: fixed;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      width: 0;
+      animation: spin 3s 2s linear infinite;
+      mix-blend-mode: multiply;
+    }
+    @keyframes spin {
+      0% {
+        width: 30vmin;
+      }
+      100% {
+        width: 30vmin;
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+    /* Marquee text style */
+    .marquee {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #ff8011;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Footer and Icons styles */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #46ad1b; /* Changed footer background color to green */
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px; /* Space between icons */
+    }
+
+    .icons a {
+      background: #ecf0f3;
+      position: relative;
+      height: 60px;
+      width: 60px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: all 0.3s;
+      box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+      text-decoration: none; /* Remove underline */
+    }
+
+    .icons a:hover:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 50%;
+      background: #ecf0f3;
+      box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+    }
+
+    .icons a i {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      font-size: 25px;
+      line-height: 60px;
+      color: inherit;
+    }
+
+    .icons a:hover i {
+      transform: scale(0.9);
+    }
+
+    .icons a.fb i {
+      color: #4267B2;
+    }
+
+    .icons a.twitter i {
+      color: #1DA1F2;
+    }
+
+    .icons a.insta i {
+      color: #E1306C;
+    }
+
+    .icons a.git i {
+      color: #333;
+    }
+
+    .icons a.yt i {
+      color: #ff0000;
+    }
+
+    .icons a.linkedin i {
+      color: #0077B5;
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">Hello, I am Santanu Maity Wishing You Happy 78th Independence Day        <br> হ্যালো, আমি শান্তনু আপনাকে 78 তম স্বাধীনতা দিবসের শুভেচ্ছা জানাচ্ছি
+    </marquee>
+  </div>
+  <h1 class="hmm">Happy Republic Day</h1>
+  <div class="clr-orange"></div>
+  <div class="clr-white"></div>
+  <div class="clr-green"></div>
+  <img class="ashoka-chakra" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RDHZOvImVKQZt6XGA0r9VfX8PqLgZnUuD35RPfo1Qrh6ZZK1d_3c9WiQv5R1-aj8tac&usqp=CAU" />
+
+  <footer>
+    <div class="icons">
+      <a href="https://www.facebook.com/profile.php?id=100025513846313&mibextid=ZbWKwL" class="fb"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/Mr_SantanuMaity" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/santanu.m.official/" class="insta"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Santanu-Maity" class="git"><i class="fab fa-github"></i></a>
+      <a href="https://www.youtube.com/channel/UCdraKu2qlR8xTVNepcsUsgg" class="yt"><i class="fab fa-youtube"></i></a>
+      <a href="https://in.linkedin.com/in/santanu-maity?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
